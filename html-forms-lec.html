@@ -46,14 +46,28 @@
 
 
 <!-- TODO TOGETHER: Build a form, using a GET request, with an input to enter and submit a zipcode	-->
+
+<form action="https://hookb.in/03QVmeWrJ8FR7zmw06j2" method="get">
+
+    <label for="zipcode-input">Enter your zipcode</label> <!-- for users to understand what each represents -->
+    <input type="text" id="zipcode-input" name="zipcode" placeholder="Enter your zipcode"> <!-- both name and id can be the same name / name input is required & represents the key  -->
+    <button type="submit">Submit</button>
+
+</form>
+
+
+
+
 <!-- TODO TOGETHER: What is the main difference we notice with a GET request vs POST request? *HINT - Check URL	-->
 
-
+<!-- GET actually just returns info that you request -->
+<!-- POST actually writes information to the database / think submitting an application / signup -->
 
 
 
 
 <!-- TODO: Practice submitting different zip codes and view the request in hookbin	-->
+
 <!-- TODO: Change the placeholder value in the form. What do you notice?	-->
 
 <!--********************************
@@ -73,8 +87,26 @@
         Review hidden inputs
         Review an input with type=submit
 ************************************ !-->
+<br>
 
+<label for="comment">Enter a comment</label>
+<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
+<br>
+
+<button type="submit">Submit</button>
+
+<br>
+
+<label for="coffee-select">Select your favorite coffee:</label>
+    <select name="coffee-select" id="coffee-select">
+        <option value="Brazilian">Brazilian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Colombian">Colombian</option>
+    </select>
+
+<br>
+<button type="submit">Submit</button>
 
 <!--************************************************************
     TODO: Answer the following about the form listed below:
@@ -90,7 +122,27 @@
 <!--		<input type="submit">-->
 <!--	</form>-->
 
+<input type="checkbox" name="newsletter" value="true">Sign up for newsletter <!-- use checked if you want the checkbox preselected -->
 
+<br>
+
+<h3>Select an answer</h3>
+
+<label for="a-radio">A</label>
+<input type="radio" id="a-radio" name="question 1" value="A">
+
+<br>
+
+<label for="b-radio">B</label>
+<input type="radio" id="b-radio" name="question 1" value="B">
+
+<br>
+
+<label for="c-radio">C</label>
+<input type="radio" id="c-radio" name="question 1" value="C">
+
+<br>
+<button type="submit">Submit</button>
 
 <!--********************************
             DISABLED
@@ -99,13 +151,16 @@
 <!--	<input type="text" name="username" value="codeup" disabled>-->
 
 <!--	<select name="newsletter_signup">-->
-<!--		<option disabled value="n">No</option>-->
+<!--		<option disabled value="n">No</option>--> <!-- disabled does not let user change anything -->
 <!--		<option selected value="y">Yes</option>-->
 <!--	</select>-->
+
+<!-- hidden inputs allows you to send info that the user cannot see use <input type="hidden" name="user-id" value="432"> -->
 
 
 
 <!-- TODO: What happens when a user tries to enter text into the first input?	-->
+
 <!-- TODO: What happens when a user tries to select the "no" option in the select	-->
 
 
@@ -128,9 +183,16 @@
 		- Other
  -->
 
+<h2>What kind of phone do you own?</h2>
 
+<label for="Android">Android</label>
+<input type="checkbox" id="phone" value="Android">
 
+<label for="iOS">iOS</label>
+<input type="checkbox" id="iOS" value="iOS">
 
+<label for="other">Other</label>
+<input type="checkbox" id="other" value="Other">
 
 
 
