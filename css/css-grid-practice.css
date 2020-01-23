@@ -1,0 +1,26 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px;
+    background-color: #111111;
+}
+
+.letter {
+    background-color: #96A8AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 70px;
+    color: #DDDDDD;
+    line-height: 1;
+    font-family: "Hiragino Mincho Pro", Helvetica, serif;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all .3s ease;
+}
