@@ -18,15 +18,15 @@
         }
 
         .flex-container {
-            height: 15em;
+            height: 10em;
             width: 100%;
             border: 3px solid goldenrod;
             display: flex; /* needed in order to use flexbox, needs to be in the container */
             flex-direction: row; /* used to control the direction of the content within the container */
-            justify-content: center; /* used to move content around along its main axis within the container */
+            justify-content: start; /* used to move content around along its main axis within the container */
             /*align-items: flex-start; !* centers items based on size of fonts (baseline), stretch is the default *!*/
-            flex-wrap: nowrap;
-            align-content: center;
+            /*flex-wrap: nowrap;*/
+            /*align-content: center;*/
 
         }
 
@@ -37,15 +37,20 @@
         }
 
         #box-1 {
-            font-size: 15px;
+            align-self: flex-start;
+            /*font-size: 15px;*/
+            /*order: 2;*/
         }
 
         #box-2 {
-            font-size: 30px;
+            align-self: stretch;
+            /*font-size: 30px;*/
         }
 
         #box-3 {
-            font-size: 45px;
+            align-self: flex-end;
+            /*order: 1;*/
+            /*font-size: 45px;*/
         }
 
     </style>
@@ -62,29 +67,29 @@
 <h3>Flexbox Examples</h3>
 
 <div class="flex-container">
-<!--    <div class="flex-item" id="box-1" >Item 1</div>-->
-<!--    <div class="flex-item" id="box-2" >Item 2</div>-->
-<!--    <div class="flex-item" id="box-3">Item 3</div>-->
+    <div class="flex-item" id="box-1" >Item 1</div>
+    <div class="flex-item" id="box-2" >Item 2</div>
+    <div class="flex-item" id="box-3">Item 3</div>
 
     <!-- Abbreviation that we can use!	-->
-    <div class="flex-item" id="1">flex item 1</div>
-    <div class="flex-item" id="2">flex item 2</div>
-    <div class="flex-item" id="3">flex item 3</div>
-    <div class="flex-item" id="4">flex item 4</div>
-    <div class="flex-item" id="5">flex item 5</div>
-    <div class="flex-item" id="6">flex item 6</div>
-    <div class="flex-item" id="7">flex item 7</div>
-    <div class="flex-item" id="8">flex item 8</div>
-    <div class="flex-item" id="9">flex item 9</div>
-    <div class="flex-item" id="10">flex item 10</div>
-    <div class="flex-item" id="11">flex item 11</div>
-    <div class="flex-item" id="12">flex item 12</div>
-    <div class="flex-item" id="13">flex item 13</div>
-    <div class="flex-item" id="14">flex item 14</div>
-    <div class="flex-item" id="15">flex item 15</div>
-    <div class="flex-item" id="16">flex item 16</div>
-    <div class="flex-item" id="17">flex item 17</div>
-    <div class="flex-item" id="18">flex item 18</div>
+<!--    <div class="flex-item" id="1">flex item 1</div>-->
+<!--    <div class="flex-item" id="2">flex item 2</div>-->
+<!--    <div class="flex-item" id="3">flex item 3</div>-->
+<!--    <div class="flex-item" id="4">flex item 4</div>-->
+<!--    <div class="flex-item" id="5">flex item 5</div>-->
+<!--    <div class="flex-item" id="6">flex item 6</div>-->
+<!--    <div class="flex-item" id="7">flex item 7</div>-->
+<!--    <div class="flex-item" id="8">flex item 8</div>-->
+<!--    <div class="flex-item" id="9">flex item 9</div>-->
+<!--    <div class="flex-item" id="10">flex item 10</div>-->
+<!--    <div class="flex-item" id="11">flex item 11</div>-->
+<!--    <div class="flex-item" id="12">flex item 12</div>-->
+<!--    <div class="flex-item" id="13">flex item 13</div>-->
+<!--    <div class="flex-item" id="14">flex item 14</div>-->
+<!--    <div class="flex-item" id="15">flex item 15</div>-->
+<!--    <div class="flex-item" id="16">flex item 16</div>-->
+<!--    <div class="flex-item" id="17">flex item 17</div>-->
+<!--    <div class="flex-item" id="18">flex item 18</div>-->
 
     <!-- div.flex-item#${flex-item $}*17 -->
 
