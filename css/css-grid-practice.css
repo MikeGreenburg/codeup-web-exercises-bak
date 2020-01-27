@@ -37,10 +37,10 @@ button {
     background: #111111;
     color: #DDDDDD;
     border: none;
-    padding 1em;
+    padding: 1em;
     border-radius: .2em;
     margin: 2em 0;
-    opacity: 60%;
+    opacity: 20%;
 }
 .wrapper {
     display: grid;
@@ -102,7 +102,7 @@ a {
 }
 
 .background-img {
-    background: url("") no-repeat center center fixed;
+    background: url("../img/codeupwitharrow.png") no-repeat center center fixed;
     background-size: cover;
     grid-area: 1 / 1/ 2/ -1;
     min-height: 100vh;
@@ -146,6 +146,7 @@ a {
 
 .footer-links li {
     padding: 1em;
+}
 
  .logo {
      font-family: "Hiragino Mincho Pro", serif, cursive;
