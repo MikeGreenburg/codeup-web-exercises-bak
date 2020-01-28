@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <title>Order Pizza</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Pizza world</a>
+        </nav>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Order online<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Zip code">
+                </form>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search stores near you" aria-label="near you">
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End Of Navbar-->
+
+<!-- Jumbotron Start -->
+<div class="d-none d-lg-block"><!--hide on screens smaller than lg-->
+    <div class="jumbotron jumbotron-fluid" id="main-jumbotron">
+        <div class="container" id="jumbotron-container">
+            <h1 class="display-4">Welcome to Pizza World!</h1>
+        </div>
+    </div>
+</div>
+<!-- Jumbotron End -->
+
+<h2>Build your own pizza!</h2>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <button type="button" class="btn btn-light">
+            Size & crust <span class="badge badge-secondary">1</span>
+            <span class="sr-only">unread messages</span>
+        </button>
+    </li>
+    <li class="nav-item">
+        <button type="button" class="btn btn-light">
+            Cheese & sauce <span class="badge badge-secondary">2</span>
+            <span class="sr-only">unread messages</span>
+        </button>
+    </li>
+    <li class="nav-item">
+        <button type="button" class="btn btn-light">
+            Toppings <span class="badge badge-secondary">3</span>
+            <span class="sr-only">unread messages</span>
+        </button>
+    </li>
+</ul>
+
+<!--Card1 -->
+<div class="card" style="width: 100%;">
+    <div class="card-header">
+        Choose Size & crust
+    </div>
+
+    <!--card1.a-->
+    <div class="card" style="width: 100%;">
+        <div class="card-header">
+            Hand Tossed
+        </div>
+        Garlic seasoned crust with a rich, buttery taste.
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio" aria-label="Radio button for following text input">
+                </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with radio button">
+        </div>
+    </div>
+    <!--card1.b-->
+    <div class="card" style="width: 100%;">
+        <div class="card-header">
+            Crispy Thin
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
