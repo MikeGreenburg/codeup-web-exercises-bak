@@ -39,10 +39,10 @@
     "menu footer footer"
     "menu citation citation";
     grid-gap: 2em;
+    height: 100%;
 }
 
 header {
-    display: grid;
     grid-area: header;
     flex-direction: column;
     background-color: #111111;
@@ -52,24 +52,21 @@ header {
 .menu {
     grid-area: menu;
     display: grid;
-    flex-direction: column;
     background-color: #96A8AE;
     color: #111111;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .content {
     grid-area: content;
     display: grid;
-    flex-direction: column;
 }
 
 .ads {
     grid-area: ads;
     display: grid;
-    flex-direction: column;
+    border: 1px solid black;
 }
+
 
 .citation {
     grid-area: citation;
@@ -80,8 +77,6 @@ header {
 
 footer {
     grid-area: footer;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 3em;
