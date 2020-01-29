@@ -12,9 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-    <title>Order Pizza</title>
     <link rel="stylesheet" href="css/custom.css">
+    <title>Order Pizza</title>
 </head>
 <body>
 <!--Navbar Start-->
@@ -56,79 +55,98 @@
 <div class="d-none d-lg-block"><!--hide on screens smaller than lg-->
     <div class="jumbotron jumbotron-fluid" id="main-jumbotron">
         <div class="container" id="jumbotron-container">
-            <h1 class="display-4">Welcome to Pizza World!</h1>
+            <div class="jumbotron-container" id="pizzaworld">
+                <h1 class="display-4">Welcome to Pizza World!</h1>
+            </div>
         </div>
     </div>
 </div>
 <!-- Jumbotron End -->
+<div class="container box">
+    <h2>Build your own pizza!</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button type="button" class="btn btn-light">
+                Size & crust <span class="badge badge-secondary">1</span>
+                <span class="sr-only">unread messages</span>
+            </button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn btn-light">
+                Cheese & sauce <span class="badge badge-secondary">2</span>
+                <span class="sr-only">unread messages</span>
+            </button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn btn-light">
+                Toppings <span class="badge badge-secondary">3</span>
+                <span class="sr-only">unread messages</span>
+            </button>
+        </li>
+    </ul>
 
-<h2>Build your own pizza!</h2>
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <button type="button" class="btn btn-light">
-            Size & crust <span class="badge badge-secondary">1</span>
-            <span class="sr-only">unread messages</span>
-        </button>
-    </li>
-    <li class="nav-item">
-        <button type="button" class="btn btn-light">
-            Cheese & sauce <span class="badge badge-secondary">2</span>
-            <span class="sr-only">unread messages</span>
-        </button>
-    </li>
-    <li class="nav-item">
-        <button type="button" class="btn btn-light">
-            Toppings <span class="badge badge-secondary">3</span>
-            <span class="sr-only">unread messages</span>
-        </button>
-    </li>
-</ul>
 
-<!--Card1 -->
-<div class="card" style="width: 100%;">
-    <div class="card-header">
-        Choose Size & crust
-    </div>
-
-    <!--card1.a-->
+    <!--Card1 -->
     <div class="card" style="width: 100%;">
-        <div class="card-header">
-            Hand Tossed
+        <div class="card-header" id="crustsize">
+            Choose Size & crust
         </div>
-        Garlic seasoned crust with a rich, buttery taste.
-        <div class="form-check" card-header>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-                Default checkbox
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-            <label class="form-check-label" for="defaultCheck2">
-                Disabled checkbox
-            </label>
-        </div>
-    </div>
-    <!--card1.b-->
-    <div class="card" style="width: 100%;">
-        <div class="card-header">
-            Crispy Thin
-        </div>
-        Thin enough for optimum crispy to crunchy ratio.
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <div class="input-group-text">
-                    <input type="radio" aria-label="Radio button for following text input">
+
+        <!--card1.a-->
+        <div class="card" style="width: 100%;">
+            <div class="card-header" id="handtossed">
+                Hand Tossed
+            </div>
+            <div class="words">
+            Garlic seasoned crust with a rich, buttery taste.
+            </div>
+            <div class="card-header">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" name="question1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Small (10")
+                    </label>
                 </div>
             </div>
-            <input type="text" class="form-control" aria-label="Text input with radio button">
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+            <div class="card-header">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="2" id="defaultCheck2" name="question2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        Medium (12")
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--card1.b-->
+        <div class="card" style="width: 100%;">
+            <div class="card-header" id="crispythin">
+                Crispy Thin
+            </div>
+            <div class="words">
+            Thin enough for optimum crispy to crunchy ratio.
+            </div>
+            <div class="card-header">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="3" id="defaultCheck3" name="question3">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Medium (12")
+                    </label>
+                </div>
+            </div>
+            <div class="card-header">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="4" id="defaultCheck4" name="question4">
+                    <label class="form-check-label" for="defaultCheck2">
+                        Large (14")
+                    </label>
+                </div>
+            </div>
+            <a class="btn btn-primary" href="#" role="button" id="next button">Next</a>
+        </div>
     </div>
 </div>
+
+
 
 </body>
 </html>
