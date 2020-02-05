@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 /**
  * TODO:
@@ -8,10 +8,10 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-function sayHello(name) {
-    return "Hello " + name + "!";
-}
-console.log(sayHello("John"));
+// function sayHello(name) {
+//     return "Hello, " + name + "!";
+// }
+// console.log(sayHello("John"));
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -19,21 +19,21 @@ console.log(sayHello("John"));
  *
  * console.log 'helloMessage' to check your work
  */
-var helloMessage = sayHello("Mike");
-console.log(helloMessage);
+// var helloMessage = sayHello("Mike");
+// // console.log(helloMessage);
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-var myName = "Mike G";
-sayHello(myName);
-console.log(sayHello(myName));
-
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+// var myName = "Mike G";
+// sayHello(myName);
+// console.log(sayHello(myName));
+//
+// // Don't modify the following line, it generates a random number between 1 and 3
+// // and stores it in a variable named random
+// var random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -96,8 +96,8 @@ function calculateTip(num, per) {
 // 1. Prompt user to input bill total
 //2. Prompt user to input tip percentage
 //3. alert user to proper tip amount in money
-var num = Number(prompt( "What is the total bill"));
-var per = Number(prompt("What tip percent do you want to leave?"));
+var num = parseFloat(prompt( "What is the total bill"));
+var per = parseFloat(prompt("What tip percent do you want to leave?"));
 var alertMessage = "Your tip amount is: $" + calculateTip(num, per).toFixed(2);
 
 alert(alertMessage);
