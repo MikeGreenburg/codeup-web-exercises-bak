@@ -51,30 +51,39 @@
 </script>
 <!--function that returns the first Item in an Array-->
 <script>
-     function firstItem(inputArray) {
-         return inputArray [0]
-     }
-     console.log(firstItem(["dog", "cat", "fish", "bird", "fox"]));
-     console.log(firstItem([1, 2, 3, 4])); //returns 1
+    //  function firstItem(inputArray) {
+    //      return inputArray [0]
+    //  }
+    //  console.log(firstItem(["dog", "cat", "fish", "bird", "fox"]));
+    //  console.log(firstItem([1, 2, 3, 4])); //returns 1
+    //
+    // <!--functions must always have a return -->
+    //
+    // // write a function called determineType that accepts a single input, and returns the type of data that is input //
+    // function    determineType(input) {
+    //     return typeof input; <!-- typeof returns type of data once called / can be used for comparisons, debugging, be able to perform specific logic/ data type checking-->
+    // }
+    //     console.log(determineType(7));
+    //     console.log(determineType(true));
+    //     console.log(determineType("hello"));
+    //
+    //     // Function //
+    //  // Write a function that returns true or false based off whether the number passed, squared, is evenly divisible by 3.//
+    //
+    // function squaredNumDivisibleByThree (num) {
+    //     return (num * num) %3 === 0;
+    // }
+    // console.log(squaredNumDivisibleByThree(3));
+    // console.log(squaredNumDivisibleByThree(7));
 
-    <!--functions must always have a return -->
+    // Write a function called isString that accepts a single input, and returns true if the data type is a string or false if it is not a string.
 
-    // write a function called determineType that accepts a single input, and returns the type of data that is input //
-    function    determineType(input) {
-        return typeof input; <!-- typeof returns type of data once called / can be used for comparisons, debugging, be able to perform specific logic/ data type checking-->
+    function isString(input) {
+        return typeof input === "string"; // for data checking you want to use typeof
     }
-        console.log(determineType(7));
-        console.log(determineType(true));
-        console.log(determineType("hello"));
+    console.log(isString(true));
+    console.log(isString("hello"));
 
-        // Function //
-     // Write a function that returns true or false based off whether the number passed, squared, is evenly divisible by 3.//
-
-    function squaredNumDivisibleByThree (num) {
-        return (num * num) %3 === 0;
-    }
-    console.log(squaredNumDivisibleByThree(3));
-    console.log(squaredNumDivisibleByThree(7));
 </script>
 </body>
 </html>
