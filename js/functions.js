@@ -82,9 +82,9 @@
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(num, per) {
-    return (num/100)*per;
-}
+// function calculateTip(num, per) {
+//     return (num/100)*per;
+// }
 // console.log(calculateTip());
 
 /**
@@ -95,12 +95,12 @@ function calculateTip(num, per) {
  */
 // 1. Prompt user to input bill total
 //2. Prompt user to input tip percentage
-//3. alert user to proper tip amount in money
-var num = parseFloat(prompt( "What is the total bill"));
-var per = parseFloat(prompt("What tip percent do you want to leave?"));
-var alertMessage = "Your tip amount is: $" + calculateTip(num, per).toFixed(2);
-
-alert(alertMessage);
+// //3. alert user to proper tip amount in money
+// var num = parseFloat(prompt( "What is the total bill"));
+// var per = parseFloat(prompt("What tip percent do you want to leave?"));
+// var alertMessage = "Your tip amount is: $" + calculateTip(num, per).toFixed(2);
+//
+// alert(alertMessage);
 
 /**
  * TODO:
@@ -128,3 +128,25 @@ alert(alertMessage);
 //
 // alert(alertMessage);
 // // console.log(applyDiscount(originalPrice, discountedPercent));
+// function isOdd(x) {
+//     return (x % 2 === 1);
+// }
+// console.log(isOdd(24));
+
+// function isTrue(x) {
+//     return x === true; (== "true" both string and word will return true / == anything but true will return false)
+// }
+// console.log(isTrue(true));
+
+// function isZero(number) {
+//     return (number === 0);
+// }
+// console.log(isZero(0));
+
+// var firstNumber = Number(prompt("what is your first number?"));
+// var secondNumber = Number(prompt("What is your second number?"));
+//
+// function subtract(a, b) {
+//     return a - b;
+// }
+// alert(subtract(firstNumber, secondNumber));
