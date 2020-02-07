@@ -15,8 +15,40 @@
  *
  * Can you refactor your code to use functions?
  */
+// var confirmQuestion = confirm("Would you like to pick a number?");
+// var numberPrompt = Number(prompt("Choose your number!"));
+// if (confirmQuestion === true) {
+//     numberQuestion(numberPrompt);
+// }
+//
+// function numberQuestion(number) {
+//     var evenOdd;
+//     var plusOneHundred;
+//     var negPos;
+//     if (isNaN(number)){
+//         alert("NaN");
+//     }
+//     else if(number % 2 === 0) { //0 is even
+//         alert("Your number is even");
+//     }
+//     else if(number % 2 === 1) { //1 odd is
+//         alert("Your number is odd");
+//     }
+//     //end of even odd check
+//     alert("Your number plus 100 is: " + (number + 100));
+//         //end of plus 100 check
+//
+//     if (number >= 0) {
+//         alert(number + " is positive");
+//     } else {
+//         alert(number + " is negative");
+//     }
+// }
+//
+// console.log(numberQuestion(number));
 
-/* ########################################################################## */
+    /* ########################################################################## */
+
 
 /**
  * TODO:
@@ -35,7 +67,27 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+//1. create a function called analyzeColor
+    //2. that accepts a string that is a color name input
+    //3. return a message that says so
+// var red = "Apples are red";
+// var blue = "Water is blue";
+// var cyan = "Is a mix between Green and Blue";
+// // var colorInput = ['red', 'blue', 'cyan'];
+var userColorSelection = prompt("Please pick a color");
 
+function analyzeColor(anyColor) {
+    if (anyColor === "red") {
+        alert("Apples are Red");
+    } else if(anyColor === "blue" ) {
+        alert("Water is blue");
+    } else if(anyColor === "cyan") {
+        alert("Is a mix between Green and Blue");
+    } else {
+        alert("Try again");
+    }
+}
+console.log(analyzeColor(userColorSelection));
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -92,3 +144,4 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
