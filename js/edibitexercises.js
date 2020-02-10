@@ -76,10 +76,11 @@
 //2. that takes two integers (hours, minutes) in
 //3. converts them into seconds
 
-function convert(a,b) {
-    return (3600 * a) / ();
-}
-console.log(convert(3, 8));
+// var num1 = 13.3;
+// function umbers(num1) {
+//     return num1 % 2 === 0;
+// }
+// console.log(umbers(12));
 
 // function time_convert(num)
 // {
@@ -91,3 +92,23 @@ console.log(convert(3, 8));
 // console.log(time_convert(71));
 // console.log(time_convert(450));
 // console.log(time_convert(1441));
+
+//IEFI statement used to shield info
+
+// (function () {
+//
+// })();
+// anonymous function
+// var randomTest = function (); call a variable name  (randomTest) then call the function: randomTest();
+
+//switch (status) {
+//     case veteran:
+//         goToLogin;
+//     break;
+//     case retired:
+//         goToRetiredpage;
+//     break;
+//     default:
+//         goToGeneralInfo;
+//         break;
+// }
