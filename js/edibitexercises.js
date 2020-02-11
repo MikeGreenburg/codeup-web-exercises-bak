@@ -140,3 +140,12 @@
 // }
 // console.log(test("tim ", + 23));
 
+// function isString(input) {
+//     return typeof input === "string";
+// }
+// console.log(isString(true));
+//
+// function isBoolean(input) {
+//     return typeof input === "boolean";
+// }
+// console.log(isBoolean(""));
