@@ -1,6 +1,6 @@
 "use strict";
 
-console.log("hello from conditionals lec.js!");
+// console.log("hello from conditionals lec.js!");
 
 // ================ REAL WORLD SCENARIO ================
 // If a user is an admin,show a specific navbar
@@ -185,7 +185,7 @@ function checkWeather(weather) {
     }
 }
 
-console.log(checkWeather("cloudy"));
+// console.log(checkWeather("cloudy"));
 // alert(checkWeather("meatballs"));
 
 // Together: PIZZA PREFERENCE EXAMPLE
@@ -308,7 +308,7 @@ function pizzaMessage(pizzaPreference) {
     return pizzaConfirmation;
 }
 
-console.log(pizzaMessage(pizzaChoice));
+// console.log(pizzaMessage(pizzaChoice));
 
 
 

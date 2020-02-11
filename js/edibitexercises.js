@@ -112,3 +112,31 @@
 //         goToGeneralInfo;
 //         break;
 // }
+// function isBoolean(input) {
+//     return typeof input === "boolean";
+// }
+// console.log(isBoolean(false));
+//
+// function isBoolean(input) {
+//     return typeof input == "number";
+// }
+// console.log(isBoolean("20"));
+// function cash(input) {
+//     return typeof input === "boolean";
+// }
+// console.log(cash("21"));
+
+// function runner(input) {
+// //     return typeof input === "number"; // If you want to know true / false then use type of It will only return answers in "string" format
+// // }
+// // console.log(runner(99.9));
+
+// function hire(x, y) {
+//     return x == "dark beer" || y == "cold beer";
+// }
+// console.log(hire(1, 21));
+// function test(a, b) {
+//     return a + b;
+// }
+// console.log(test("tim ", + 23));
+
