@@ -64,12 +64,12 @@ console.log("Welcome to intro to arrays");
 * 					COUNTING AN ARRAY
 *************************************************************** */
 
-//We can also count the length of an array by using the `.length` property
+// We can also count the length of an array by using the `.length` property
 
 // TODO TOGETHER: Log the length of shapes array
 // console.log(shapes.length);
 
-
+//
 // TODO: console.log the length of the instructors array
 // console.log(instructors.length);
 // TODO: console.log the length of the daysOfTheWeek array
@@ -108,7 +108,7 @@ console.log("Welcome to intro to arrays");
 // console.log(instructors [3]);
 // console.log(instructors [4]);
 // console.log(instructors [5]);
-
+//
 // TODO: console.log the first three elements of the daysOfTheWeek array
 // console.log(daysOfTheWeek [0]);
 // console.log(daysOfTheWeek [1]);
@@ -118,9 +118,9 @@ console.log("Welcome to intro to arrays");
 // console.log(favoriteFoods [0]);
 // console.log(favoriteFoods [1]);
 // console.log(favoriteFoods [2]);
-
+// //
 // TODO: create a function called `returnLastElement` that accepts an array and returns the last element of that array
-
+//
 // function returnLastElement(array) {
 //     return array [array.length -1];
 // }
