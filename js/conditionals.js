@@ -16,7 +16,7 @@
  * Can you refactor your code to use functions?
  */
 // Not using a function
-
+//
 // var willContinue = confirm("What number would you like to enter?");
 //
 // if(willContinue) {
