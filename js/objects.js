@@ -16,14 +16,19 @@
     //     person.lastName = "Greenburg";
     //
     // console.log(person.firstName, person.lastName);
+    var person = new Object();
+        person.firstName = "Michael";
+        person.lastName = "Greenburg";
+
+        console.log(person.firstName, person.lastName);
 
         //creates an Object
-    var person = {
-        firstName: "Michael",
-        lastName: "Greenburg"
-        };
-    console.log(person.firstName, person.lastName); // console logs only the first and last name
-    console.log(person);// console logs the Object and can choose between elements in object
+    // var person = {
+    //     firstName: "Michael",
+    //     lastName: "Greenburg"
+    //     };
+    // console.log(person.firstName, person.lastName); // console logs only the first and last name
+    // console.log(person);// console logs the Object and can choose between elements in object
 
 
     /**
@@ -35,10 +40,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-   person.hello = function () {
-        return "Hello " + person.firstName + " " + person.lastName;
-   };
-    console.log(person.hello());
+   // person.hello = function () {
+   //      return "Hello " + person.firstName + " " + person.lastName;
+   // };
+   //  console.log(person.hello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -113,3 +118,84 @@
      */
 
 })();
+/*
+write a function that takes in a number and returns the number plus 10
+this function can only accept numbers and string numbers
+
+write a function that takes in a number and console logs it as a string
+
+write a function that will take in a number and return true or false if the number is even or odd.
+the function only accepts numbers
+the function will return false if a string number is input
+
+ */
+//1 write a function
+//2 takes in a number
+    //need to convert and not reject
+    // converting will turn any string into a number
+//3 returns number + 10
+    // return number inside () and + 10 outside ()
+
+// function isNumber(num) {
+//     return parseFloat(num) + 10;
+// }
+// console.log(isNumber("56"));
+
+//1 write function
+//2 takes in number
+    //do I want to reject (isNaN) or convert (parseFloat)?
+    //going to convert because it will turn strings into a number
+    // parseFloat(num); >> when I do this it converts the input into a number
+//2.5
+//  we need to turn num into string
+// .toString >> will take my number turn it in to a string
+//3 console logs as string
+    // console log new string.
+// function function1(num){
+//         var numbered = parseFloat(num);
+//     console.log(numbered);
+//     // part2
+//         var numberStringed = numbered.toString();
+//     //part3
+//         console.log(numberStringed);
+// }
+//
+// function1("3");
+
+//1. write a function
+//2. take in a number
+    //do I want to reject (isNaN) or convert (parse)
+//3. return true or false if num is odd or even
+//4. only accepts number
+//5/ will return false if string
+// if (isNaN(num)) {
+//     return false;
+// } else if(typeof num === "boolean"){
+//     return false;
+// } else {
+//     num 2 % === 0;
+// }
+
+
+function isEven(num) {
+    if (isNaN(num)) {
+        return false;
+    }else if (typeof num === "boolean") {
+        return false;
+    } else if (typeof num === "string"){
+        return false;
+    } else {
+       return num % 2 === 0;
+    }
+}
+console.log(isEven("2"));
+
+// function isNumber(num) {
+//     if (isNaN(num)){
+//         return true;
+//     } else {
+//         return isNumber;
+//     }
+// }
+//
+// console.log(isNumber(29));
