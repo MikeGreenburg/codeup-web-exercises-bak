@@ -127,3 +127,30 @@ Nest one Array within Another Array.*/
 // colors.forEach(function (color) {
 //     console.log("here are the colors in " + color);
 // });
+
+//1. Using a while loop console log "using a while loop" 5 times.
+//1 write a while loop
+//2 console.log "using a while loop" 5 times.
+// var i = 0;
+// while (i < 5) {
+//     console.log("using a while loop " + i);
+//     i++;
+// }
+
+
+// 2. Write a function that creates an array of numbers 1-5.
+//1 write a function
+//2 create an array of numbers 1-5
+var array = [1,2,3,4,5];
+function newArray() {
+
+    return array;
+}
+console.log(newArray());
+
+// 3. Using a for loop console log every item inside of the array created in problem 2.
+//1 use a for loop
+//2 console log every item inside the array
+for (var i = 0; i <= array.length; i++) {
+    console.log("here are the items inside array " + i);
+}
