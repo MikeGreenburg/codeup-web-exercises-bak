@@ -16,11 +16,11 @@
     //     person.lastName = "Greenburg";
     //
     // console.log(person.firstName, person.lastName);
-    var person = new Object();
-        person.firstName = "Michael";
-        person.lastName = "Greenburg";
-
-        console.log(person.firstName, person.lastName);
+    // var person = new Object();
+    //     person.firstName = "Michael";
+    //     person.lastName = "Greenburg";
+    //
+    //     console.log(person.firstName, person.lastName);
 
         //creates an Object
     // var person = {
@@ -119,16 +119,17 @@
 
 })();
 /*
-write a function that takes in a number and returns the number plus 10
+1. write a function that takes in a number and returns the number plus 10
 this function can only accept numbers and string numbers
 
-write a function that takes in a number and console logs it as a string
+2. write a function that takes in a number and console logs it as a string
 
-write a function that will take in a number and return true or false if the number is even or odd.
+3. write a function that will take in a number and return true or false if the number is even or odd.
 the function only accepts numbers
 the function will return false if a string number is input
 
  */
+//1.
 //1 write a function
 //2 takes in a number
     //need to convert and not reject
@@ -137,9 +138,11 @@ the function will return false if a string number is input
     // return number inside () and + 10 outside ()
 
 // function isNumber(num) {
+//     // console.log(parseFloat(num));
 //     return parseFloat(num) + 10;
 // }
-// console.log(isNumber("56"));
+// console.log(isNumber();
+
 
 //1 write function
 //2 takes in number
@@ -151,6 +154,7 @@ the function will return false if a string number is input
 // .toString >> will take my number turn it in to a string
 //3 console logs as string
     // console log new string.
+
 // function function1(num){
 //         var numbered = parseFloat(num);
 //     console.log(numbered);
@@ -160,7 +164,11 @@ the function will return false if a string number is input
 //         console.log(numberStringed);
 // }
 //
-// function1("3");
+// function1(3);
+
+// 3. write a function that will take in a number and return true or false if the number is even or odd.
+// the function only accepts numbers
+// the function will return false if a string number is input
 
 //1. write a function
 //2. take in a number
@@ -168,6 +176,7 @@ the function will return false if a string number is input
 //3. return true or false if num is odd or even
 //4. only accepts number
 //5/ will return false if string
+
 // if (isNaN(num)) {
 //     return false;
 // } else if(typeof num === "boolean"){
@@ -177,18 +186,18 @@ the function will return false if a string number is input
 // }
 
 
-function isEven(num) {
-    if (isNaN(num)) {
-        return false;
-    }else if (typeof num === "boolean") {
-        return false;
-    } else if (typeof num === "string"){
-        return false;
-    } else {
-       return num % 2 === 0;
-    }
-}
-console.log(isEven("2"));
+// function isEven(num) {
+//     if (isNaN(num)) {
+//         return false;
+//     }else if (typeof num === "boolean") {
+//         return false;
+//     } else if (typeof num === "string"){
+//         return false;
+//     } else {
+//        return num % 2 === 0;
+//     }
+// }
+// console.log(isEven(1));
 
 // function isNumber(num) {
 //     if (isNaN(num)){
