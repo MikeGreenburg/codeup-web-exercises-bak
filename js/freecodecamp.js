@@ -92,3 +92,38 @@ Nest one Array within Another Array.*/
 //         alert(negativePositive + " is not a number");
 //         break;
 // }
+
+// 1. Using a while loop console log "using a while loop" 5 times.
+//1. write a while loop
+//2 console.log
+//3 "using a while loop" 5 times
+// var i = 0;
+// while (i<6){
+//     console.log("hello " + i);
+//
+//     i++;
+// }
+
+// console.log(b);
+// console.log(c);
+// 2. Write a function that creates an array of numbers 1-5.
+// function newArray(){
+//
+//     return array2;
+// }
+// var array2 = [1,2,3,4];
+// console.log(array2[2]);
+// console.log(newArray());
+// 3. Using a for loop console log every item inside of the array created in problem 2.
+//1. write a for loop
+//2. console.log every item from array2
+// for (var i = 0; i < array2.length; i++) {
+//     console.log(array2[i]);
+// }
+// 4. Using a forEach loop console log every item in the array created in problem 2.
+//1. write a forEach loop
+//2. console.log every item in the array
+// var colors = ["red", "blue", "green", "grey", "orange"];
+// colors.forEach(function (color) {
+//     console.log("here are the colors in " + color);
+// });
