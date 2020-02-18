@@ -15,42 +15,42 @@
 //  *
 //  * Can you refactor your code to use functions?
 //  */
-// // Not using a function
-// //
-// // var willContinue = confirm("What number would you like to enter?");
-// //
-// // if(willContinue) {
-// //     //prompt for number
-// //     var userInput = prompt("What number would you like to enter?");
-// //     var isNum = !isNaN(userInput);           // **** function isNum **** //
-// //
-// //     if (isNum) { // isNum is true
-// //         // we know that we have a real number
-// //         // run all of our calculations in this if statement
-// //
-// //         //even or odd                        // **** function even() **** //
-// //         if (userInput % 2 === 0) { // true -> even
-// //             alert("number is even");
-// //         } else { // false -> odd
-// //             alert("Number is odd");
-// //         }
-// //
-// //         // num + 100                         // **** function plus100() **** //
-// //         var userNum = parseFloat(userInput);
-// //         alert("Your number plus 100 = " + (userNum + 100));
-// //
-// //         // negative or positive              // **** function negative() **** //
-// //         if (userInput < 0) { // their number is negative
-// //             alert("Your number is negative");
-// //         } else if(userInput > 0) { // their number is positive
-// //            alert("Your number is positive");
-// //         } else { // Number is Zero
-// //             alert("Your number is 0")
-// //         }
-// //     } else { // isNum is false
-// //       alert("That is not a number")
-// //     }
-// // }
+// Not using a function
+
+var willContinue = confirm("What number would you like to enter?");
+
+if(willContinue) {
+    //prompt for number
+    var userInput = prompt("What number would you like to enter?");
+    var isNum = !isNaN(userInput);           // **** function isNum **** //
+
+    if (isNum) { // isNum is true
+        // we know that we have a real number
+        // run all of our calculations in this if statement
+
+        //even or odd                        // **** function even() **** //
+        if (userInput % 2 === 0) { // true -> even
+            alert("number is even");
+        } else { // false -> odd
+            alert("Number is odd");
+        }
+
+        // num + 100                         // **** function plus100() **** //
+        var userNum = parseFloat(userInput);
+        alert("Your number plus 100 = " + (userNum + 100));
+
+        // negative or positive              // **** function negative() **** //
+        if (userInput < 0) { // their number is negative
+            alert("Your number is negative");
+        } else if(userInput > 0) { // their number is positive
+           alert("Your number is positive");
+        } else { // Number is Zero
+            alert("Your number is 0")
+        }
+    } else { // isNum is false
+      alert("That is not a number")
+    }
+}
 // // ----- End of not using a function ----- //
 //
 // // var confirmQuestion = confirm("Would you like to pick a number?");
