@@ -26,7 +26,10 @@ Nest one Array within Another Array.*/
 //     return typeof input;
 // }
 //
-// console.log(inputType(12));
+// console.log(inputType("dogs"));
+//
+// will return number in the console.
+
 
 
 // 2. write an if else statement that takes in only a number and returns weather the number is positive or negative.
@@ -141,16 +144,106 @@ Nest one Array within Another Array.*/
 // 2. Write a function that creates an array of numbers 1-5.
 //1 write a function
 //2 create an array of numbers 1-5
-var array = [1,2,3,4,5];
-function newArray() {
-
-    return array;
-}
-console.log(newArray());
+// var array = [1,2,3,4,5];
+// function newArray() {
+//
+//     return array;
+// }
+// console.log(newArray());
 
 // 3. Using a for loop console log every item inside of the array created in problem 2.
 //1 use a for loop
 //2 console log every item inside the array
-for (var i = 0; i <= array.length; i++) {
-    console.log("here are the items inside array " + i);
-}
+// for (var i = 0; i <= array.length; i++) {
+//     console.log("here are the items inside array " + i);
+// }
+
+// 1. write a function that takes in a number and returns the number plus 10
+// this function can only accept numbers and string numbers
+//
+// 2. write a function that takes in a number and console logs it as a string
+//
+// 3. write a function that will take in a number and return true or false if the number is even or odd.
+//     the function only accepts numbers
+// the function will return false if a string number is input
+//
+// */
+//1.
+//1 write a function
+//2 takes in a number
+//need to convert and not reject
+// converting will turn any string into a number
+//3 returns number + 10
+// return number inside () and + 10 outside ()
+
+// function isNumber(num) {
+//     // console.log(parseFloat(num));
+//     return parseFloat(num) + 10;
+// }
+// console.log(isNumber();
+
+
+//1 write function
+//2 takes in number
+//do I want to reject (isNaN) or convert (parseFloat)?
+//going to convert because it will turn strings into a number
+// parseFloat(num); >> when I do this it converts the input into a number
+//2.5
+//  we need to turn num into string
+// .toString >> will take my number turn it in to a string
+//3 console logs as string
+// console log new string.
+
+// function function1(num){
+//         var numbered = parseFloat(num);
+//     console.log(numbered);
+//     // part2
+//         var numberStringed = numbered.toString();
+//     //part3
+//         console.log(numberStringed);
+// }
+//
+// function1(3);
+
+// 3. write a function that will take in a number and return true or false if the number is even or odd.
+// the function only accepts numbers
+// the function will return false if a string number is input
+
+//1. write a function
+//2. take in a number
+//do I want to reject (isNaN) or convert (parse)
+//3. return true or false if num is odd or even
+//4. only accepts number
+//5/ will return false if string
+
+// if (isNaN(num)) {
+//     return false;
+// } else if(typeof num === "boolean"){
+//     return false;
+// } else {
+//     num 2 % === 0;
+// }
+
+
+// function isEven(num) {
+//     if (isNaN(num)) {
+//         return false;
+//     }else if (typeof num === "boolean") {
+//         return false;
+//     } else if (typeof num === "string"){
+//         return false;
+//     } else {
+//        return num % 2 === 0;
+//     }
+// }
+// console.log(isEven(1));
+
+// function isNumber(num) {
+//     if (isNaN(num)){
+//         return true;
+//     } else {
+//         return isNumber;
+//     }
+// }
+//
+// console.log(isNumber(29));

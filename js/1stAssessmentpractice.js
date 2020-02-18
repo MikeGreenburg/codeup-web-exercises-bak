@@ -14,15 +14,15 @@
 // isBoolean("kwiw")           // false
 // isBoolean([1, 2])           // false
 //
-function isBoolean(input) {
-    return typeof input === "boolean";
-}
-console.log(isBoolean(0));
-
-function isBoolean(input) {
-    return typeof input === "number";
-}
-console.log(isBoolean());
+// function isBoolean(input) {
+//     return typeof input === "boolean";
+// }
+// console.log(isBoolean(0));
+//
+// function isBoolean(input) {
+//     return typeof input === "number";
+// }
+// console.log(isBoolean());
 // 2. Define a function named `isString` that takes in a value as an input and returns a boolean if the input provided is a string or not. Numeric strings will count as strings and should return true.
 //
 // function isString(input) {
