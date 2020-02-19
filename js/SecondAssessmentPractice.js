@@ -36,8 +36,13 @@
 // 2. Define a function named increment that takes in an input and adds 1 to it if the input is numeric. If the input is not numeric, then return false.
 
 function increment(input) {
-    return
+    if (typeof input ===  ){
+        return input +=1;
+    } else {
+        return false;
+    }
 }
+console.log(increment("10"));
 
 // increment(0)                // 1
 // increment("10")             // 11
@@ -49,8 +54,14 @@ function increment(input) {
 
 // 3. Define a function named decrement. If the provided input is numeric, the function should subtract 1 and return the result. If the input is not numeric, decrement should return false.
 
-
-
+function decrement(input){
+    if (!isNaN(parseFloat(input))){
+        return input -1;
+    } else {
+        return false;
+    }
+}
+console.log(decrement("4"));
 // decrement(19)               // 18
 // decrement(0)                // -1
 // decrement("4")              // 3
