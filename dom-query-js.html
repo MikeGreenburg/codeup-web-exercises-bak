@@ -52,7 +52,7 @@
 
         // TODO: Set text color on every other list item to grey
 
-        for (var i = 0; i < listItems.length; i = i + 2){
+        for (var i = 0; i < listItems.length; i = i + 2){ //for(var i = 0; i < listItems.length; i+=2) can also be used.
             listItems[i].style.color = "grey";
         }
 
@@ -69,12 +69,12 @@
 
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName("sub-paragraphs");
-        console.log(subParagraphs);
+        var subParagraphs = document.getElementsByClassName("sub-paragraph");
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        subParagraphs.innerText = "Mission Accomplished!";
+        subParagraphs[0].innerText = "Mission Accomplished!";
+
     })();
 </script>
 </body>
