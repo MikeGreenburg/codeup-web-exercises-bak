@@ -167,35 +167,6 @@ if(willContinue) {
 //     return colorMessage;
 // }
 //
-// // var userColorSelection = prompt("Please pick a color");
-// //
-// // function analyzeColor(anyColor) {
-// //     if (anyColor === "red") {
-// //         alert("Strawberries are Red");
-// //     } else if(anyColor === "blue" ) {
-// //         alert("The sky is Blue");
-// //     } else if(anyColor === "cyan") {
-// //         alert("Is a mix between Green and Blue");
-// //     } else {
-// //         alert("Try again");
-// //     }
-// // }
-// // console.log(analyzeColor(userColorSelection));
-// // Don't change the next two lines!
-// // These lines create two variables for you:
-// // - `colors`: a list of the colors of the rainbow
-// // - `randomColor`: contains a single random color value from the list (this
-// //                  will contain a different color every time the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
-// /**
-//  * TODO:
-//  * Pass the `randomColor` variable to your function and console.log the results.
-//  * You should see a different message every time you refresh the page
-//  */
-// console.log(analyzeColor("blue"));
-// console.log(analyzeColor("red"));
-// console.log(analyzeColor("cyan"));
 //
 // /**
 //  * TODO:
@@ -273,17 +244,4 @@ if(willContinue) {
 //     // 50 - (50*.10) = 50 - 5 = 45
 //     return totalAmount - (discountRate * totalAmount);
 // }
-//
-// /**
-//  * TODO:
-//  * Uncomment the line below to generate a random number between 0 and 6.
-//  * Prompt the user for their total bill, then use your `calculateTotal` function
-//  * and alerts to display to the user what their lucky number was, what their
-//  * price before the discount was, and what their price after the discount is.
-//  */
-// // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-//
-// var totalBill = prompt("what was your total bill?");
-// alert("your lucky number is: " + luckyNumber);
-// alert("Your new total bill is: " + calculateTotal(luckyNumber, titalBill).toFixed(2));
+

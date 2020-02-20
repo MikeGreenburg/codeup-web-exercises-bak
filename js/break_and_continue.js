@@ -69,10 +69,10 @@
 // Version 2
 
 // another approach to writing the above statement
-for (var i = 1; i<=50; i+=2){
-    if (i === userNumber) {
-        console.log("Yikes! Skipping number: " + i);
-        continue;
-    }
-    console.log("Here's an odd number: " + i);
-}
+// for (var i = 1; i<=50; i+=2){
+//     if (i === userNumber) {
+//         console.log("Yikes! Skipping number: " + i);
+//         continue;
+//     }
+//     console.log("Here's an odd number: " + i);
+// }
