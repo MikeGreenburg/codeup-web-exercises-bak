@@ -149,3 +149,4 @@
 //     return typeof input === "boolean";
 // }
 // console.log(isBoolean(""));
+

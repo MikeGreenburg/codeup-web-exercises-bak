@@ -30,7 +30,7 @@
 // var myName = "Mike G";
 // sayHello(myName);
 // console.log(sayHello(myName));
-//
+
 // // Don't modify the following line, it generates a random number between 1 and 3
 // // and stores it in a variable named random
 // var random = Math.floor((Math.random() * 3) + 1);
@@ -63,7 +63,7 @@
 // }
 // "fucntion name"(argument); "calls function"
 // console.log(displaying the info in the console)
-
+//
 // function isTwo(number) {
 //     return number === 2;
 // }
@@ -94,7 +94,7 @@
  * then display the dollar amount they should tip
  */
 // 1. Prompt user to input bill total
-//2. Prompt user to input tip percentage
+// 2. Prompt user to input tip percentage
 // //3. alert user to proper tip amount in money
 // var num = parseFloat(prompt( "What is the total bill"));
 // var per = parseFloat(prompt("What tip percent do you want to leave?"));
@@ -131,18 +131,20 @@
 // function isOdd(x) {
 //     return (x % 2 === 1);
 // }
-// console.log(isOdd(24));
-
+// console.log(isOdd(24));function isEmptyString(input) {
+//     return input === "";
+// }
+//
 // function isTrue(x) {
 //     return x === true; (== "true" both string and word will return true / == anything but true will return false)
 // }
 // console.log(isTrue(true));
-
+//
 // function isZero(number) {
 //     return (number === 0);
 // }
 // console.log(isZero(0));
-
+//
 // var firstNumber = Number(prompt("what is your first number?"));
 // var secondNumber = Number(prompt("What is your second number?"));
 //
