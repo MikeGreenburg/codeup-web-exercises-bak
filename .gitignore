@@ -1,5 +1,6 @@
 .idea/*
 *.iml
 .DS_STORE
-1stAssessmentpractice.html
-1stAssessmentpractice.js
+*1stAssessmentpractice.html
+*1stAssessmentpractice.js
+js/keys.js
