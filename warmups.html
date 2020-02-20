@@ -84,6 +84,112 @@
     console.log(isString(true));
     console.log(isString("hello"));
 
+    // Loop through the following array of Reindeer objects and return an array of Reindeer objects that are "gold" reindeer
+    var reindeerList = [
+        {
+            name: "Dot",
+            age: 5,
+            isGold: false
+        },
+        {
+            name: "Dasher",
+            age: 8,
+            isGold: true
+        },
+        {
+            name: "Patch",
+            age: 2,
+            isGold: false
+        },
+        {
+            name: "Rocket",
+            age: 6,
+            isGold: false
+        },
+        {
+            name: "Dancer",
+            age: 9,
+            isGold: true
+        },
+        {
+            name: "Prancer",
+            age: 5,
+            isGold: true
+        },
+        {
+            name: "Groot",
+            age: 9,
+            isGold: false
+        },
+        {
+            name: "Vixen",
+            age: 9,
+            isGold: true
+        },
+        {
+            name: "Comet",
+            age: 11,
+            isGold: true
+        },
+        {
+            name: "Archie",
+            age: 3,
+            isGold: false
+        },
+        {
+            name: "Cupid",
+            age: 13,
+            isGold: true
+        },
+        {
+            name: "Donder",
+            age: 16,
+            isGold: true
+        },
+        {
+            name: "Boots",
+            age: 16,
+            isGold: false
+        },
+        {
+            name: "Blizten",
+            age: 16,
+            isGold: true
+        }
+    ];
+
+    // loop through the array and log the values
+    reindeerList.forEach(function(reindeer)
+
+    //For Loop is if you need to skip over items in the array **** For Arrays Only ****
+    //whenever you need to return an array you need an empty bucket(empty array) to store what you need in it
+
+    // function getGoldReindeer(reindeerArray) {
+    //         var bucket = [];//empty bucket needed to store your output
+    //         for(var i = 0; i < reindeerArray.length; i++){//
+    //             if (reindeerArray[i].isGold === true){// reindeerArray is what you are itterating through [i] is all the elements in that array to go through .isGold is what you are looking for in that array and measuring if it is true.
+    //                 bucket.push(reindeerArray[i]);
+    //             }
+    //         }
+    //         return bucket;
+    // }
+    //     console.log(getGoldReindeer(reindeerList));
+    //
+    //
+    // //forEach.loop ex://iterates through everything in an array **** For Arrays only ****
+    //
+    // function getGoldReindeer(reindeerArray){
+    //     var bucket = [];
+    //     reindeerArray.forEach(function (reindeer) {//the .forEach it
+    //         if(reindeer.isGold === true){//if this condition is true then
+    //             bucket.push(reindeer);//push into this bucket
+    //         }
+    //
+    //     })
+    // }
+
+
+    })
 </script>
 </body>
 </html>
