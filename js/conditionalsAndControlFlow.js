@@ -116,3 +116,4 @@ var highSchool = false;
 if(age >= 18 || highSchool === true){
     alert("You can apply!")
 }
+
