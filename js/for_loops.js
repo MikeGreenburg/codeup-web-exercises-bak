@@ -190,6 +190,8 @@
 //     console.log(i)
 // }
 
+// Write a function, `getOlder()` that takes in array of dog objects and increases the value of the age properties by 1.
+
 var dogs = [
     {
         name: "Chompers",
@@ -208,7 +210,12 @@ var dogs = [
     }
 ];
 
-
+dogs.forEach(function(dog) {
+    console.log(dog.breed + " " + dog.age)
+    // dogs.forEach(function (dog) {
+    // console.log(dog.age + 1);
+    })
+});
 
 
 
@@ -219,6 +226,37 @@ var dogs = [
 //
 // var testArray = [{thingToSay: "hello", number: 27}, 8, 4, test];
 
-dogs.forEach(function(dog) {
-    console.log(dog.breed + " " + dog.age)
-});
+// forEach loop layout
+//1. array name in plural/
+//2. .forEach/
+//3. ( inside the parenthsis is function/
+//4. ( inside the parenthsis is your array in singular form close the inner parenthsis )/
+//5. close the outer parenthsis )/
+//6. { which starts the function portion where you want to write your code dog calling the array and what element are you looking for/
+//7. ex dog.breed will return that dogs breed/
+//8. then }); to close the curly braces and the loop out.
+//9. dogs.forEach(function(){
+//  console.log(dog.breed + " " + dog.age)
+//  }); will return
+
+// 1.  Write a function, `filterNumbers()` that takes in an array of mixed data types and returns an array of only the numbers type in ascending order.
+
+//1 write a function
+//2 named filterNumbers()
+//3 takes in an array of mixed data types
+//4 and returns an array of only the numbers
+//5 in ascending order
+
+
+
+// var array1 = [3,6, true, "blues", 5, 21];
+// function filterNumbers(array1){
+//     for (var i = 0; i <= array1.length; i++){
+//         if (array1 === "string"){
+//
+//         }
+//     }
+//
+// }
+//
+//         filterNumbers(["fred", true, 5, 3]) //[3, 5]
