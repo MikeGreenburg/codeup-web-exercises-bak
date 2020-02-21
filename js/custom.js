@@ -63,19 +63,19 @@ var marker = new mapboxgl.Marker(markerOptions)//Links the markers characteristi
 
 // TODO TOGETHER: Add a popup to the map over codeup. Set the html as a paragraph that says "Codeup Rocks!"
 
-// var popup = new mapboxgl.Popup()
-//     .setLngLat([-98.489615, 29.426827])
-//     .setHTML("<p>Codeup Rocks!</p>")
-//     .addTo(map);
+var popup = new mapboxgl.Popup()
+    .setLngLat([-98.489615, 29.426827])
+    .setHTML("<p>Codeup Rocks!</p>")
+    .addTo(map);
 
 
 // TODO TOGETHER: Comment out the popup we just added. Add a popup to the alamo marker.
 
-// var alamoPopup = new mapboxgl.Popup()
-//     .setHTML("<H1>Remember the Alamo</H1>")
-//     .addTo(map);
+var alamoPopup = new mapboxgl.Popup()
+    .setHTML("<H1>Remember the Alamo</H1>")
+    .addTo(map);
 
-// marker.setPopup(alamoPopup);
+marker.setPopup(alamoPopup);
 
 // TODO: Review the popup docs. What are some additional options we can pass to the popup?
 // TODO: Try setting the text by using ".setText()" instead of ".setHTML()"
@@ -89,12 +89,12 @@ var marker = new mapboxgl.Marker(markerOptions)//Links the markers characteristi
 
 
 // TODO TOGETHER: Using the Geocoder helper function, log the coordinates of Codeup and recenter the map to focus on Codeup. Comment out previous map code.
-// geocode("the white house", mapboxToken).then(function (result) {
-//     // console.log(result);
-//     // map.setCenter(result);
-//     // map.setZoom(12)
-//     map.flyTo({center: result, zoom: 16});
-// });
+geocode("the white house", mapboxToken).then(function (result) {
+    // console.log(result);
+    // map.setCenter(result);
+    // map.setZoom(12)
+    map.flyTo({center: result, zoom: 16});
+});
 
 //TODO: Using the geocode method above, add a marker at Codeup to the map
 //TODO: Instead of setCenter try using map.jumpTo()

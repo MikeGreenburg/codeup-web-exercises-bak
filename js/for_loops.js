@@ -140,7 +140,7 @@
 
 // Written as a nested loop. Breaks down by outer loop and inner loop.
 
-//for(var outer = 1; outer < 10; outer++){
+// for(var outer = 1; outer < 10; outer++){
 //  console.log("outer loop");
 //  var output = "";
 //  for(var inner = 1; inner <= outer // to make it dynamic instead of hard coding; inner++){
@@ -148,7 +148,7 @@
 //      output += outer;
 //  }
 //  console.log(output);
-//}
+// }
 
 //Create a for loop that uses console.log to create the output shown below.
 //
@@ -189,3 +189,36 @@
 // for(var i = 100; i >= 5; i-=5){
 //     console.log(i)
 // }
+
+var dogs = [
+    {
+        name: "Chompers",
+        breed: "Pug",
+        age: 7
+    },
+    {
+        name: "Freddy",
+        breed: "Lab",
+        age: 4
+    },
+    {
+        name: "Mr. Pig",
+        breed: "Mastif",
+        age: 10
+    }
+];
+
+
+
+
+
+// var test = {
+//     thingToSay: "hi",
+//     number: 3
+// };
+//
+// var testArray = [{thingToSay: "hello", number: 27}, 8, 4, test];
+
+dogs.forEach(function(dog) {
+    console.log(dog.breed + " " + dog.age)
+});
