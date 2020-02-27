@@ -1,32 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Konami Code</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
-<style>
-    body{
-        background-color: black;
-        overflow: hidden;
-    }
-    #contra {
-        display: block;
-        margin-left: auto;
-        width: 100%;
-        height: 100%
-    }
-
-    #text {
-        text-align: center;
-        color: white;
-        font-family: 'Press Start 2P';
-    }
-
-</style>
 <body>
-<h1 id="text">Game Genie</h1>
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+<h1 id="killer">Konami Code</h1>
 <img id="contra" src="img/Contrastart.png" alt="">
-
 
 <script src="js/jquery-2.2.4.js"></script>
 <script type="text/javascript">
@@ -48,7 +28,7 @@
         var userInput = 0;
         $('backgroundImage').html('contra');
         // $('#contra').css('background-size', '100px 100px');
-        document.addEventListener('keydown', function (e) { // starts 2nd code
+        document.addEventListener('keydown', function (e) {
 
             var key = keys[e.keyCode];
             var requiredKey = konamiCode[userInput];
@@ -70,10 +50,9 @@
 
             // $('body').css('background-size', '100px 100px');
 
-            var audio = new audio();
-            audio.play();
+            // var audio = new audio( directory/download .mp3);
+            // audio.play();
         }
     });
-    </script>
 </body>
 </html>
