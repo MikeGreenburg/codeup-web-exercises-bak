@@ -26,11 +26,17 @@
 <h1 id="text">Game Genie</h1>
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 <img id="contra" src="img/Contrastart.png" alt="">
+<audio id="pop">
+    <source src="sounds/Contra%20Title%20Screen.mp3" type="audio/mpeg">
+</audio>
 
 
 <script src="js/jquery-2.2.4.js"></script>
 <script type="text/javascript">
     "use strict";
+    window.onload=function(){
+        document.getElementById("#successfulContra").play();
+    };
 
     $(document).ready(function(){
 
@@ -47,7 +53,6 @@
         var konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter'];
         var userInput = 0;
         $('backgroundImage').html('contra');
-        // $('#contra').css('background-size', '100px 100px');
         document.addEventListener('keydown', function (e) { // starts 2nd code
 
             var key = keys[e.keyCode];
@@ -64,14 +69,9 @@
             }
         });
         function activateCheats() {
-            // $('body').css();
-
+            $('audio#pop')[0].play();
             $('h1').html("You Have 30 Extra Lives");
 
-            // $('body').css('background-size', '100px 100px');
-
-            var audio = new audio();
-            audio.play();
         }
     });
     </script>
