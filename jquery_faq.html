@@ -34,7 +34,8 @@
 <!--Update the page with jQuery to add a link that toggles the class invisible on and off for all dd elements.-->
 <body>
 <div>
-    <h1>"Would you like to sign up for our newsletter?",<span>'x'</span></h1>
+    <h1>"Would you like to sign up for our newsletter?"</h1>
+    <h2>Would you like to sign up for my webzone?</h2>
 </div>
 <div id="special">
     <h1>National Parks FAQ?!</h1>
@@ -43,7 +44,7 @@
         Visiting national parks (including entrance passes)
         Miscellaneous topics</p>
 
-    <i id="x" class="far fa-times-circle"></i>
+    <i id="x" class="far fa-times-circle">x</i>
 </div>
 
 
@@ -143,9 +144,9 @@
         $(this).parent().hide();
     });
 
-    $("ul").hide();
+    $("ul").hide();// hides the ul items
 
-    // $("h2").hide().delay(8000).fadeIn();
+    $("h2").hide().delay(8000).fadeIn();// causes the would you like to sign up for my webzone?
 </script>
 
 </body>
