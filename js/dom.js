@@ -16,7 +16,7 @@
 //console.log(document.body);// grabs the body and outputs it to the console.
 //console.log(document.all[10]);// will grab the <h1> at index [10]
 //console.log(document.all[10].textContent = 'Hello');// will select the <h1> at index [10] and change it to "Hello" (you do not want to use this method of selecting from the dom as it is not dynamic!!!
-//console.log(document.forms);// grabs all the forms on the page. Use the index [0] to grab select items on th form
+//console.log(document.forms);// grabs all the forms on the page. Use the index [0] to grab select items on the form
 //console.log(document.links);// grabs all the links on the page
 //console.log(document.images);// grabs all the images in the document
 
