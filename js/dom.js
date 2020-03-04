@@ -4,7 +4,7 @@
 // Object Oriented Representation
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!EXAMINE THE DOCUMENT OBJECT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
-//console.dir(document); // IT SHOWS ALL OF THE DIFFERENT PROPERTIES AND METHODS ATTACHED TO THE DOCUMENT OBJECT
+console.dir(document); // IT SHOWS ALL OF THE DIFFERENT PROPERTIES AND METHODS ATTACHED TO THE DOCUMENT OBJECT
 
 //console.log(document.);// console.log(document. + whatever element you want to pass
 //document.all;// Gives us an HTML collection of everything that is inside the page/document
@@ -129,7 +129,7 @@
 
 //PARENT NODES//
 
-var itemList = document.querySelector('items');
+// var itemList = document.querySelector('items');
 //parentNode property
 //console.log(itemList.parentNode);// it gives us the <div> with the id of #main because it is inside of the <div class="container">
 
@@ -152,5 +152,5 @@ var itemList = document.querySelector('items');
 //Child Nodes
 //use children instead!!!
 
-console.log(itemList.childNodes);// gives us a node list basically an array all the text items are linebreaks
+//console.log(itemList.childNodes);// gives us a node list basically an array all the text items are linebreaks
 

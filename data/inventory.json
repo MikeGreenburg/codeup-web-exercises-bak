@@ -30,25 +30,37 @@
     "tool"
   ],
   "price": 10
-}
+},
   {
     "title": "Feet of Flightline",
     "quantity": 50,
-    "categories": "Army"
-  }
+    "categories": [
+      "Army"
+      ],
+    "price": "8"
+  },
   {
     "title": "Male Fallopian Tubes",
     "quantity": 3,
-    "categories": "Army"
-  }
+    "categories": [
+      "Army"
+      ],
+    "price": 8
+  },
   {
     "title": "Box of Grid Squares",
     "quantity": 2,
-    "categories": "Army"
-  }
+    "categories": [
+      "Army"
+    ],
+    "price": 8
+  },
   {
-    "title": "Tactical Caffeen Transfer Unit",
+    "title": "Tactical Caffeine Transfer Unit",
     "quantity": 1,
-    "categories": "Army"
+    "categories": [
+      "Army"
+    ],
+    "price": 8
   }
 ]
