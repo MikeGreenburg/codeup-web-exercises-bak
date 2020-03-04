@@ -4,13 +4,16 @@
 // Object Oriented Representation
 
 //******************************EXAMINE THE DOCUMENT OBJECT*****************************//
-//console.dir(document); // It shows us all of the different properties and methods attached to the document object
+//console.dir(document); // IT SHOWS ALL OF THE DIFFERENT PROPERTIES AND METHODS ATTACHED TO THE DOCUMENT OBJECT
+
 //console.log(document.);// console.log(document. + whatever element you want to pass
 //document.all;// Gives us an HTML collection of everything that is inside the page/document
 //console.log(document.domain);// will result in localhost (the loopback address)
 //console.log(document.URL);// returns the full url address (http://localhost:633)
+
 //console.log(document.title);// returns the title (Item Lister)
 //document.title = "123";// document.title = will change the title to whatever value we pass
+
 //console.log(document.doctype);// uses the html5 doctype
 //console.log(document.head);// grabs the head element and outputs it to the console and see everything that is in the head.
 //console.log(document.body);// grabs the body and outputs it to the console.
@@ -27,6 +30,7 @@
 
 //console.log(document.getElementById('headerTitle'));// pulls the header title and console logs it
 // var headerTitle = document.getElementById('header-title');
+
 // var header = document.getElementById('main-header');
 //console.log(headerTitle);// puts header title inside a variable and the console.log just logs it.
 
@@ -55,7 +59,7 @@
 
 
 //***********************************GET ELEMENTS BY TAGNAME***********************************//
-// works the same way as by ID and Class except you are getting it by TAG!
+// WORKS THE SAME WAY AS BY ID AND CLASS EXCEPT YOU ARE GETTING IT BY TAG!
 
 //var li = document.getElementsByTagName('li');
 //console.log(items);// grabs all the li items by the index on the page and displays them to the console.
@@ -81,4 +85,35 @@
 //header.style.borderBotom = 'solid 3px #000';// this changes the actual header border when used in conjunction with  var header = document.getElementById('main-header');
 
 
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>QUERY SELECTOR>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+// QUERY SELECTOR ONLY GRABS THE FIRST INSTANCE OF THE ITEM YOU SELECT!!!
 
+//var header = document.querySelector('');// you can use anything you want in the () after querySelector (class, tags, any css selector, you can grab a list item(li), just replace the jQuery $ with document.querySelector().
+
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px #ccc';// turns the main header border on the bottom to grey
+//
+// var input = document.querySelector('input');
+// input.value = 'Hello World';// added a value to that input
+//
+// var submit = document.querySelector(input[type="submit"]);
+// submit.value="SEND";// changes the list button to SEND
+//
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red';// will grab the first list item in the group and style it
+//
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';// will grab the last list item in the group and style it
+//
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.color = 'coral';// will grab the 2nd list item in the group and style it
+
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<QUERY SELECTOR ALL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
+//WILL GRAB ALL THE ITEMS IN WITH THE DESIGNATED NAME
+
+var titles = document.querySelectorAll('.title');
+console.log(titles);// gives us a node list which is similar to a collection, except we can actually run array functions on a node list!!!
+titles[0].textContent = 'Hello';// how we access those node
+
+var odd = document.querySelectorAll('li:nth-child(odd)');// nth-child is a .css selector
