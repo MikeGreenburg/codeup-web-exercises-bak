@@ -3,6 +3,9 @@ var mapboxToken = "pk.eyJ1IjoiY2xrMzIwcmFjZXIiLCJhIjoiY2s2dHRyNmt2MDFkNjNvczJkc3
 //DARKSKY.NET//
 var darkSkyKey = "39fcbf9abb9b85b22991f38b945d8297";
 
+//WEATHER API//
+var weatherApikey = "696b828161b84b9588f223852200403";
+
 //go step by step break into pieces
 //1st take a look at what you get from the api call (request)
 //display the weather info for one day
