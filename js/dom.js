@@ -131,7 +131,7 @@ console.dir(document); // IT SHOWS ALL OF THE DIFFERENT PROPERTIES AND METHODS A
 
 // var itemList = document.querySelector('items');
 //parentNode property
-//console.log(itemList.parentNode);// it gives us the <div> with the id of #main because it is inside of the <div class="container">
+// console.log(itemList.parentNode);// it gives us the <div> with the id of #main because it is inside of the <div class="container">
 
 //USED AS A SELECTOR
 //var itemList = document.querySelector('items');

@@ -17,17 +17,40 @@
 .mapboxgl-popup {
     max-width: 200px;
 }
+.btn-primary {
+    color: black;
+}
 
 /*----------JUMBOTRON----------*/
-#main-jumbotron{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("img/");
+#container{
+    /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/meteorology_bkgrd.jpg");*/
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 30vh;
+    opacity: 10%;
+    /*background-image: url("../img/slowclouds.mp4");*/
 }
+
+#main-jumbotron {
+    background-image: url("../img/meteorology_bkgrd.jpg");
+    height: 10vh;
+}
+
+
+#navbar {
+    z-index: 1;
+    /*background-image: url("../img/meteorology_bkgrd.jpg");*/
+    margin-top: -30px;
+}
+
 #jumbotron-container{
     color: white;
 }
 .embed-responsive .card-img-top {
     object-fit: cover;
+}
+/*-------------END JUMBOTRON--------------*/
+
+#mapInfo{
+    background-color: transparent;
 }

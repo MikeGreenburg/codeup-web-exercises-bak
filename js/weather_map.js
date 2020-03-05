@@ -53,5 +53,7 @@ $(document).ready(function() {
                 ],
                 'fill-extrusion-opacity': 0.6
             }
-        })
+        });
+    //-------------------------Geolocation Control------------------------------//
+
 });
